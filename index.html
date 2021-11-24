@@ -1,0 +1,45 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script type="text/JavaScript">
+
+
+
+function natsum()
+{
+var a = document.form.N.value;
+var i;
+var sum = 0;
+
+var N= new Number(a);
+for(i=1;i<=N;i++)
+sum=sum+i;
+
+alert("sum of 1 to "+a+" natural numbers is "+sum+" ");
+}
+</script>
+</head>
+<body>
+    <div class="heading">
+        <p><u>Home</u></p>
+        <p><u>About</u></p>
+        <h1>MathsForMaths</h1>
+    </div>
+    <div class="main">
+        <h2><u>Sum Of Natural Numbers:</u></h2>
+        <p>The concept of finding the sum of sum of integers is found such that first, we will find the sum of numbers up to n and then add all the sums to get a value which will be the sum of sum which is our desired sum.
+        For this problem, we are given a number n up to which we have to find the sum of the sum. Let's take an example to find this sum</p>
+        <p>the formula to calculate sumo of natural numbers is<br>
+            (N*(N+1))/2</p>
+            <hr>
+        <h2 id="second">How many natural number(1 to ..)?</h2><br>
+        <div class="form">
+            <form name ="form" onsubmit="natsum()">
+            <input class="num" name ="N" type="text"placeholder="Number">
+            <input class="click" type ="submit"value="Click">
+        </div>
+    </div>
+</form>
+</body>
+</html>
